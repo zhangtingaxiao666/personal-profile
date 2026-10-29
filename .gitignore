@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build & Package Outputs
+out/
+dist/
+release/
+.vite/
+
+# Local User Data & Credentials (NEVER commit personal data or API keys)
+data/
+attachments/
+snapshots/
+auto-backups/
+db.json
+db.json.tmp
+settings.json
+settings.json.tmp
+*.bak
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Logs & OS Files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

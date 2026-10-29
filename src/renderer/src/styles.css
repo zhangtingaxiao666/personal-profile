@@ -1,0 +1,74 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #f5f7fa;
+}
+.page {
+  padding: 24px 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.page-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.muted {
+  color: #8c8c8c;
+}
+.pre-wrap {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.field-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+.field-row:last-child {
+  border-bottom: none;
+}
+.field-label {
+  width: 110px;
+  flex-shrink: 0;
+  color: #8c8c8c;
+}
+.field-value {
+  flex: 1;
+  min-width: 0;
+}
+.drop-zone {
+  border: 2px dashed #c9d6e3;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.drop-zone.active {
+  border-color: #1f4e79;
+  background: #eef4fa;
+}
+.sider-logo {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1f4e79;
+}

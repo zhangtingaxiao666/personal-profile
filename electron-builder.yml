@@ -1,0 +1,25 @@
+appId: com.personal.profile
+productName: 个人画像
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - package.json
+asarUnpack:
+  - resources/**
+win:
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch: [x64]
+  executableName: PersonalProfile
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  artifactName: 个人画像-Setup-${version}.${ext}
+  shortcutName: 个人画像
+  createDesktopShortcut: always
+npmRebuild: false
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
